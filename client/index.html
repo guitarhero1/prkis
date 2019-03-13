@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<main style="display: flex;">
+		<section>
+			<h2>LoopBack (3000)</h2>
+			<p>
+				<a href="http://localhost:3000/students/all" target="_blank">Get students</a>
+				<br>
+				<a href="http://localhost:3000/students/0" target="_blank">Get student 0</a>
+				<a href="http://localhost:3000/students/1" target="_blank">Get student 1</a>
+				<a href="http://localhost:3000/students/2" target="_blank">Get student 2</a>
+			</p>
+			<form action="http://localhost:3000/students/add" method="GET" target="_blank">
+				<legend>Add student</legend>
+				<input type="text" name="id" placeholder="id">
+				<input type="text" name="firstName" placeholder="First name">
+				<input type="text" name="lastName" placeholder="Last name">
+				<input type="text" name="group" placeholder="Group">
+				<button type="submit">Send</button>
+				<input type="reset" value="Reset">
+			</form>
+
+			<p>
+				<a href="http://localhost:3000/groups/all" target="_blank">Get groups</a>
+				<br>
+				<a href="http://localhost:3000/groups/0" target="_blank">Get group 0</a>
+				<a href="http://localhost:3000/groups/1" target="_blank">Get group 1</a>
+				<br>
+				<a href="http://localhost:3000/groups/0/students" target="_blank">Get students from 0 group</a>
+				<a href="http://localhost:3000/groups/1/students" target="_blank">Get students from 1 group</a>
+			</p>
+			<form action="http://localhost:3000/groups/add" method="GET" target="_blank">
+				<legend>Add group</legend>
+				<input type="text" name="id" placeholder="id">
+				<input type="text" name="code" placeholder="Code">
+				<input type="text" name="entry" placeholder="Entry year">
+				<button type="submit">Send</button>
+				<input type="reset" value="Reset">
+			</form>
+		</section>
+
+
+		<section>
+			<h2>SpringBoot (8080)</h2>
+			<p>
+				<a href="http://localhost:8080/students/all" target="_blank">Get students</a>
+				<br>
+				<a href="http://localhost:8080/students/0" target="_blank">Get student 0</a>
+				<a href="http://localhost:8080/students/1" target="_blank">Get student 1</a>
+				<a href="http://localhost:8080/students/2" target="_blank">Get student 2</a>
+			</p>
+			<form action="http://localhost:8080/students/add" method="GET" target="_blank">
+				<legend>Add student</legend>
+				<input type="text" name="id" placeholder="id">
+				<input type="text" name="firstName" placeholder="First name">
+				<input type="text" name="lastName" placeholder="Last name">
+				<input type="text" name="group" placeholder="Group">
+				<button type="submit">Send</button>
+				<input type="reset" value="Reset">
+			</form>
+
+			<p>
+				<a href="http://localhost:8080/groups/all" target="_blank">Get groups</a>
+				<br>
+				<a href="http://localhost:8080/groups/0" target="_blank">Get group 0</a>
+				<a href="http://localhost:8080/groups/1" target="_blank">Get group 1</a>
+				<br>
+				<a href="http://localhost:8080/groups/0/students" target="_blank">Get students from 0 group</a>
+				<a href="http://localhost:8080/groups/1/students" target="_blank">Get students from 1 group</a>
+			</p>
+			<form action="http://localhost:8080/groups/add" method="GET" target="_blank">
+				<legend>Add group</legend>
+				<input type="text" name="id" placeholder="id">
+				<input type="text" name="code" placeholder="Code">
+				<input type="text" name="entry" placeholder="Entry year">
+				<button type="submit">Send</button>
+				<input type="reset" value="Reset">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
